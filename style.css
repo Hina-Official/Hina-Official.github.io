@@ -33,10 +33,12 @@ header {
   position: fixed;
   overflow-y: scroll;
   overflow-x: hidden;
+  display: none;
 }
 .menu::-webkit-scrollbar {
   width: 10px;
   border-left: solid 1px #eee;
+  display: none;
 }
 .menu::-webkit-scrollbar-thumb {
   background-color: #eee;
@@ -64,9 +66,9 @@ header {
 }
 .menu h2 {
   font-weight: normal;
-  text-align: center;
+  padding-left: 20px;
   font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 30px;
   border-bottom: solid 1px #ddd;
-  margin: 30px;
+  margin: 20px;
 }
