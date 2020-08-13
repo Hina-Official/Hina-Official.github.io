@@ -4,16 +4,6 @@
 <head>
   <meta charset="UTF-8" />
   <title>discord.py Embed Generator</title>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-175166261-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-175166261-1');
-  </script>
-  <script data-ad-client="ca-pub-3123668346874280" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <link rel="stylesheet" href="style.css" />
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c" rel="stylesheet">
@@ -32,43 +22,45 @@
   </header>
   <div class="menu">
     <ul>
-      <h2>MAIN</h2>
-      <li id="now"><a href="">Home</a></li>
+      <h2 style="margin-top: -50px;">MAIN</h2>
+      <li class="now"><a href="">Home</a></li>
       <li><a href="">利用規約</a></li>
       <li><a href="">機能</a></li>
       <li><a href="https://discordapp.com/invite/7kKddVA" target="_blank">公式サーバー</a></li>
-      <li><a href="https://discordapp.com/oauth2/authorize?client_id=669817785932578826&scope=bot&permissions=2147483647" target="_blank">BOTの招待リンク</a></li>
+      <li><a href="https://discordapp.com/oauth2/authorize?client_id=669817785932578826&scope=bot&permissions=2147483647" target="_blank">BOTを招待</a></li>
       <h2>SUB</h2>
-      <li><a href="">寄付</a></li>
-      <li><a href="">寄付</a></li>
-      <li><a href="">寄付</a></li>
-      <li><a href="">寄付</a></li>
-      <li><a href="">寄付</a></li>
-      <li><a href="">寄付</a></li>
-      <li><a href="">寄付</a></li>
-      <li><a href="">寄付</a></li>
-      <li><a href="">寄付</a></li>
-      <li><a href="">寄付</a></li>
-      <li><a href="">寄付</a></li>
-      <li><a href="">寄付</a></li>
-      <li><a href="">寄付</a></li>
-      <li><a href="">寄付</a></li>
-      <li><a href="">寄付</a></li>
-      <li><a href="">寄付</a></li>
+      <li><a href="https://grarich.fanbox.cc/" target="_blank">寄付</a></li>
+      <li><a href="https://twitter.com/grarich_dpy">Twitter</a></li>
     </ul>
   </div>
   <main>
     <h1>dsvfsd</h1>
   </main>
+  <footer>
+    <ul>
+      <h5>MAIN</h5>
+      <li><a href="">Home</a></li>
+      <li><a href="">利用規約</a></li>
+      <li><a href="">機能</a></li>
+      <li><a href="https://discordapp.com/invite/7kKddVA" target="_blank">公式サーバー</a></li>
+      <li><a href="https://discordapp.com/oauth2/authorize?client_id=669817785932578826&scope=bot&permissions=2147483647" target="_blank">BOTを招待</a></li>
+    </ul>
+    <ul>
+      <h5>SUB</h5>
+      <li><a href="https://grarich.fanbox.cc/" target="_blank">寄付</a></li>
+      <li><a href="https://twitter.com/grarich_dpy" target="_blank">Twitter</a></li>
+    </ul>
+  </footer>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script>
     $(".button").click(function() {
-      $('.menu').stop(true).animate({'width': 'toggle'});
+      $('.menu').stop(true).animate({'width': 'toggle'}, 300);
     });
     $(".menu").hover(function() {
-      $(".menu::-webkit-scrollbar").css({"display": "block"});
+      console.log("dsffsd")
+      $(".menu::-webkit-scrollbar").css("width", "10px;");
         }, function() {
-      $(".menu::-webkit-scrollbar").css({"display": "none"});
+      $(".menu::-webkit-scrollbar").css("width", "0px");
     });
   </script>
 </body>
