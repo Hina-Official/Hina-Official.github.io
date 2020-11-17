@@ -1,133 +1,229 @@
 header {
-    width: 100%;
-    height: 50px;
-    box-shadow: 0px 0px 10px #ccc;
-    position: fixed;
-    top: 0;
-    background: white;
-    z-index: 1;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  background: white;
+  z-index: 3;
+  box-shadow: 0px 1px 10px #ccc;
 }
-.button {
-    width: 10px;
+#button {
+  cursor: pointer;
+  width: 10px;
 }
-.button div.menubar {
-    width: 30px;
-    margin-top: 15px;
+#button div#menubar {
+	width: 30px;
+  margin-top: 15px;
+  display: none;
 }
-.button div.menubar .bar {
-    display: block;
-    height: 3px;
-    margin-top: 5px;
-    background-color: #555;
-    width: 100%;
-    margin-left: 20px;
+#button div#menubar .bar {
+	display: block;
+	height: 3px;
+	margin-top: 5px;
+	background-color: #555;
+  width: 100%;
+  margin-left: 20px;
 }
-.button:hover {
-    cursor: pointer;
+header ul {
+  margin-top: 10px;
 }
-.menu {
-    width: 250px;
-    height: 100%;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    top: 50px;
-    position: fixed;
-    background-color: white;
-    z-index: 0;
-    display: none;
-    border-right: solid 1px #eee;
+header li {
+  display: inline;
+  list-style: none;
+  border-right: solid 1px #ddd;
+  padding: 0 1.3% 0 1%;
 }
-.menu::-webkit-scrollbar {
-    width: 10px;
+header li:last-child {
+  border-right: none;
 }
-.menu::-webkit-scrollbar-thumb {
-    background-color: #eee;
-    border-radius: 5px;
+header a {
+  font-family: "Noto Sans JP";
+  color: #333;
+  text-decoration: none;
+  transition: .3s;
 }
-.menu::-webkit-scrollbar-track {
-    border-left: solid 1px #eee;
+header a:hover {
+  color: #666;
 }
-.menu ul {
-    margin-top: 100px;
-    margin-left: -40px;
-    list-style: none;
+#menu {
+  width: 250px;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  top: 50px;
+  position: fixed;
+  background-color: white;
+  z-index: 2;
+  display: none;
+  border-right: solid 1px #eee;
 }
-.menu a {
-    text-decoration: none;
-    color: #666;
-    width: 250px;
-    padding: 10px 40px;
-    font-family: 'M PLUS Rounded 1c', sans-serif;
-    display: block;
-    margin: 0px;
+#menu::-webkit-scrollbar {
+  width: 10px;
 }
-.menu li:hover {
-    background-color: #f7f7f7;
+#menu::-webkit-scrollbar-thumb {
+  background-color: #eee;
+  border-radius: 5px;
 }
-.now {
-    background-color: #eee;
-    pointer-events: none;
+#menu::-webkit-scrollbar-track {
+  border-left: solid 1px #eee;
 }
-.menu h2 {
-    font-weight: normal;
-    padding-left: 20px;
-    font-family: 'Alegreya Sans SC', sans-serif;
-    font-size: 30px;
-    border-bottom: solid 1px #ddd;
-    margin-left: 20px;
+#menu ul {
+  margin-top: 100px;
+  margin-left: -40px;
+  list-style: none;
 }
-.menu li:last-child {
-    margin-bottom: 70px;
+#menu a {
+  text-decoration: none;
+  color: #666;
+  width: 250px;
+  padding: 10px 40px;
+  font-family: "Noto Sans JP";
+  display: block;
+  margin: 0px;
+}
+#menu li:hover {
+  background-color: #f7f7f7;
+}
+#menu h2 {
+  font-weight: normal;
+  padding-left: 20px;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 30px;
+  border-bottom: solid 1px #ddd;
+  margin-left: 20px;
+}
+#menu li:last-child {
+  margin-bottom: 70px;
 }
 
 main {
-    margin: 140px 0px 100px 0px;
+  background-color: #f9f9f9;
+  font-family: "Noto Sans JP";
+}
+
+main h2 {
+  border-image: linear-gradient(.25turn, #323c6b 100px, #ddd 100px) 1/0 0 3px 0;
+  border-bottom: solid;
+  font-weight: normal;
+  font-size: 40px;
 }
 
 footer {
-    background-color: #2c2f33;
-    height: 300px;
-    width: 100%;
-    box-sizing: border-box;
+  background-color: #2c2f33;
+  height: 300px;
+  width: 100%;
+  box-sizing: border-box;
 }
 footer ul {
-    margin-top: 40px;
-    float: left;
-    width: 300px;
+  margin-top: 40px;
+  float: left;
+  width: 250px;
+  list-style: none;
 }
-footer li, a {
-    list-style: none;
-    color: #ccc;
-    text-decoration: none;
-    margin: 5px 0px;
-    display: block;
-    width: 300px;
+footer li {
+  line-height: 27px;
+  display: block;
+  width: calc(100% - 50px);
+}
+footer a {
+  text-decoration: none;
+  color: #ddd;
+  font-family: vdl-v7gothic, sans-serif;
+  display: block;
+  width: 100%;
 }
 footer h5 {
-    font-weight: normal;
-    margin: 0px;
-    color: #eee;
-    font-family: 'Alegreya Sans SC', sans-serif;
-    font-size: 30px;
-    margin-bottom: 20px;
-    border-bottom: solid 1px #ccc;
-    padding-bottom: 10px;
-    margin-right: 50px;
+  font-weight: normal;
+  margin: 0px;
+  color: #eee;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 30px;
+  margin-bottom: 20px;
+  border-bottom: solid 1px #ccc;
+  padding-bottom: 10px;
+  margin-right: 50px;
 }
 footer li:hover {
-    text-decoration: underline;
+  text-decoration: underline;
+}
+#back {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-color: #00000055;
+  z-index: 1;
+  pointer-events: none;
+  display: none;
+}
+
+#top {
+  height: 100vh;
+}
+.ml14 {
+  position: absolute;
+  top: 30vh;
+  left: 10%;
+}
+.ml14 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+.ml14 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 2px;
+  width: 120%;
+  background-color: #000;
+  transform-origin: 100% 100%;
+  bottom: 0;
+}
+.ml14 .letter {
+  display: inline-block;
+  opacity: 0;
+  font-weight: normal;
+  font-size: 50px;
+  display: inline-block;
+  line-height: 1em;
+}
+.ml12 .letter {
+  font-size: 20px;
+}
+.ml-2 {
+  margin-top: -40px;
+}
+#top img {
+  width: 250px;
+  border-radius: 50%;
+  position: absolute;
+  top: 20vh;
+  right: 10%;
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  #button div#menubar {
+    display: block;
+  }
+  header li, header a {
+    display: none;
+  }
 }
 
 @media (max-width: 700px) {
-    footer {
-        padding: 10px 40px 0px 10px;
-        height: 450px;
-    }
-    footer ul {
-        float: none;
-        width: 100%;
-    }
-    footer li, a  {
-        width: 100%;
-    }
+  footer {
+    padding: 10px 40px 0px 10px;
+    height: 450px;
+  }
+  footer ul {
+    float: none;
+    width: 100%;
+  }
+  footer li, footer a  {
+    width: 100%;
+  }
 }
